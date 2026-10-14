@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuningas Pizza & Kebab — Royal Late-Night Bites · Sörnäinen, Helsinki</title>
+<meta name="description" content="Kuningas Pizza & Kebab on Helsinginkatu 2, Sörnäinen — kebab, pizza, fresh fries. Halal, vegan & veggie options. Open till midnight, 1 min from Sörnäinen metro. Order for pickup.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Kuningas Pizza & Kebab",
+  "servesCuisine": ["Kebab", "Pizza", "Fast Food"],
+  "priceRange": "€10-15",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Helsinginkatu 2",
+    "addressLocality": "Helsinki",
+    "postalCode": "00500",
+    "addressCountry": "FI"
+  },
+  "openingHours": "Mo-Su 10:00-24:00",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.0", "reviewCount": "104" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c8102e; --red-dark:#8f0a20; --gold:#f5c518; --gold-soft:#ffe08a;
+  --ink:#17110e; --cream:#fff7ea; --paper:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);padding-bottom:84px}
+h1,h2,.disp{font-family:'Archivo Black',sans-serif;text-transform:uppercase;line-height:.95;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+/* top bar */
+.topbar{position:sticky;top:0;z-index:60;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;box-shadow:0 2px 14px rgba(0,0,0,.25)}
+.logo{display:flex;align-items:center;gap:8px;font-family:'Archivo Black';font-size:17px;text-transform:uppercase}
+.logo svg{width:26px;height:26px}
+.lang{background:transparent;border:2px solid var(--gold);color:var(--gold);font-weight:800;font-size:12px;padding:5px 12px;border-radius:999px;cursor:pointer;letter-spacing:.06em}
+/* hero */
+.hero{background:linear-gradient(160deg,var(--red) 0%,var(--red-dark) 70%,#5c0716 100%);color:#fff;position:relative;overflow:hidden;padding:64px 0 72px}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 80% -10%,rgba(245,197,24,.28),transparent 55%);pointer-events:none}
+.hero .kicker{color:var(--gold);font-weight:800;letter-spacing:.22em;font-size:12px;text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-size:clamp(44px,13vw,84px);color:#fff}
+.hero h1 .gold{color:var(--gold);text-shadow:0 4px 0 rgba(0,0,0,.28)}
+.hero p.sub{margin:18px 0 26px;font-size:17px;max-width:34ch;color:#ffe9ec;font-weight:600}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 13px;font-size:12px;font-weight:800;letter-spacing:.03em}
+.badge.gold{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.cta{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--ink);font-family:'Archivo Black';text-transform:uppercase;font-size:16px;padding:17px 30px;border-radius:14px;text-decoration:none;box-shadow:0 8px 0 var(--red-dark),0 16px 30px rgba(0,0,0,.35);transition:transform .15s,box-shadow .15s}
+.cta:active{transform:translateY(4px);box-shadow:0 4px 0 var(--red-dark),0 8px 16px rgba(0,0,0,.3)}
+.micro{margin-top:14px;font-size:13px;color:var(--gold-soft);font-weight:600}
+/* ticker */
+.ticker{background:var(--ink);color:var(--gold);overflow:hidden;white-space:nowrap;padding:12px 0;font-family:'Archivo Black';text-transform:uppercase;font-size:14px}
+.ticker span{display:inline-block;padding-right:60px;animation:tick 18s linear infinite}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* section heads */
+.kick{color:var(--red);font-weight:800;letter-spacing:.22em;font-size:11px;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(30px,8vw,44px);margin-bottom:22px}
+h2 .gold{color:var(--gold);-webkit-text-stroke:1.5px var(--ink)}
+/* about */
+.about p{font-size:16px;line-height:1.65;margin-bottom:14px;color:#3a312c}
+.about .statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.stat{background:var(--paper);border:2px solid var(--ink);border-radius:14px;padding:16px 8px;text-align:center;box-shadow:5px 5px 0 var(--gold)}
+.stat b{display:block;font-family:'Archivo Black';font-size:20px;color:var(--red)}
+.stat span{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#6b5f57}
+/* menu */
+.menu{background:var(--ink);color:var(--cream)}
+.menu h2{color:var(--cream)}
+.menu .kick{color:var(--gold)}
+.mitem{background:#241b17;border:1px solid #3c2f28;border-radius:14px;padding:18px;margin-bottom:14px}
+.mitem .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.mitem h3{font-family:'Archivo Black';text-transform:uppercase;font-size:16px;color:var(--gold-soft)}
+.mitem .price{font-family:'Archivo Black';color:var(--gold);white-space:nowrap}
+.mitem p{font-size:13.5px;color:#cbb9ac;margin-top:6px;line-height:1.5}
+.tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:2px 9px;margin-left:8px;vertical-align:2px}
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ph{border-radius:14px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:34px;position:relative;overflow:hidden;border:2px solid var(--ink)}
+.ph::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.35),transparent 50%)}
+.ph.big{grid-column:1/-1;aspect-ratio:16/8}
+.ph span{position:relative;z-index:1;filter:drop-shadow(0 3px 6px rgba(0,0,0,.3))}
+/* reviews */
+.rev{background:var(--paper);border:2px solid var(--ink);border-radius:14px;padding:18px;margin-bottom:12px;box-shadow:5px 5px 0 var(--red)}
+.rev .stars{color:var(--gold);font-size:18px;-webkit-text-stroke:.5px var(--ink);letter-spacing:2px}
+.rev b{display:block;margin:6px 0 4px;font-size:15px}
+.rev p{font-size:13.5px;color:#5a4f47;line-height:1.5}
+.score{text-align:center;margin-bottom:22px}
+.score .big{font-family:'Archivo Black';font-size:56px;color:var(--red)}
+.score .cnt{font-size:13px;font-weight:700;color:#6b5f57;text-transform:uppercase;letter-spacing:.08em}
+/* hours + map */
+.hours{background:linear-gradient(180deg,var(--cream),#ffedd0)}
+.hrow{display:flex;justify-content:space-between;padding:13px 4px;border-bottom:1px dashed #d9c3a3;font-weight:600;font-size:15px}
+.hrow.today{color:var(--red);font-weight:800}
+.hrow.today::before{content:"● ";font-size:10px;vertical-align:2px}
+.mapbox{margin-top:26px;border:2px solid var(--ink);border-radius:16px;overflow:hidden;box-shadow:6px 6px 0 var(--gold)}
+.mapbox iframe{width:100%;height:260px;border:0;display:block}
+.addr{text-align:center;margin-top:14px;font-weight:700;font-size:15px}
+.addr small{display:block;color:#6b5f57;font-weight:600;margin-top:3px}
+/* contact */
+.contact{background:var(--red);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact .kick{color:var(--gold)}
+.cbtns{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.cbtn{background:#fff;color:var(--red);text-decoration:none;font-family:'Archivo Black';text-transform:uppercase;padding:16px;border-radius:12px;font-size:15px}
+.cbtn.ghost{background:transparent;border:2px solid var(--gold);color:var(--gold)}
+/* sticky mobile bar */
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;background:var(--ink);border-top:3px solid var(--gold);box-shadow:0 -6px 24px rgba(0,0,0,.3)}
+.stickybar a{flex:1;text-align:center;padding:14px 4px 16px;text-decoration:none;color:var(--cream);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.stickybar a + a{border-left:1px solid #3a2e27}
+.stickybar .ico{display:block;font-size:20px;margin-bottom:3px}
+.stickybar a.wa{background:var(--gold);color:var(--ink)}
+footer{background:var(--ink);color:#8d7c6f;text-align:center;font-size:11.5px;padding:20px 16px 100px;line-height:1.7}
+@media(min-width:640px){.cbtns{flex-direction:row;justify-content:center}.cbtn{padding:16px 34px}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">
+    <svg viewBox="0 0 24 24" fill="var(--gold)"><path d="M5 16 3 6l5.5 4L12 4l3.5 6L21 6l-2 10H5zm0 2h14v2H5v-2z"/></svg>
+    Kuningas
+  </div>
+  <button class="lang" id="langBtn" data-en="FI" data-fi="EN" onclick="toggleLang()">FI</button>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker" data-en="Sörnäinen · Helsinginkatu 2" data-fi="Sörnäinen · Helsinginkatu 2">Sörnäinen · Helsinginkatu 2</div>
+    <h1><span data-en="The" data-fi="Kallion">The</span> <span class="gold" data-en="King" data-fi="Kuningas">King</span><br><span data-en="of late-night bites" data-fi="myöhäisillan ruoan">of late-night bites</span></h1>
+    <p class="sub" data-en="Kebab, pizza and golden fries — halal, vegan and veggie options, made fast and made royal." data-fi="Kebabia, pizzaa ja kultaisia ranskalaisia — halal-, vegaani- ja kasvisvaihtoehtoja, nopeasti ja kuninkaallisesti.">Kebab, pizza and golden fries — halal, vegan and veggie options, made fast and made royal.</p>
+    <div class="badges">
+      <span class="badge gold" data-en="⭐ 4.0 · 104 reviews" data-fi="⭐ 4.0 · 104 arvostelua">⭐ 4.0 · 104 reviews</span>
+      <span class="badge" data-en="🚇 1 min from Sörnäinen metro" data-fi="🚇 1 min Sörnäisten metrosta">🚇 1 min from Sörnäinen metro</span>
+      <span class="badge" data-en="🌙 Open till midnight" data-fi="🌙 Auki keskiyöhön">🌙 Open till midnight</span>
+      <span class="badge" data-en="🥙 Halal · Vegan · Veggie" data-fi="🥙 Halal · Vegaani · Kasvis">🥙 Halal · Vegan · Veggie</span>
+    </div>
+    <a class="cta" href="#order" data-en="Order for pickup" data-fi="Tilaa noutoon">Order for pickup</a>
+    <div class="micro" data-en="Skip the queue. Skip the Wolt fees." data-fi="Ohita jono. Ohita Wolt-maksut.">Skip the queue. Skip the Wolt fees.</div>
+  </div>
+</section>
+
+<div class="ticker"><span>🍕 PIZZA · 🥙 KEBAB · 🍟 FRIES · 🌯 RULLA · OPEN LATE · HALAL · 🍕 PIZZA · 🥙 KEBAB · 🍟 FRIES · 🌯 RULLA · OPEN LATE · HALAL · </span></div>
+
+<section class="about">
+  <div class="wrap">
+    <div class="kick" data-en="Why Kuningas" data-fi="Miksi Kuningas">Why Kuningas</div>
+    <h2 data-en="Fast. <span class='gold'>Fresh.</span> Royal." data-fi="Nopea. <span class='gold'>Tuore.</span> Kuninkaallinen.">Fast. <span class="gold">Fresh.</span> Royal.</h2>
+    <p data-en="Right next to Sörnäinen metro, Kuningas is the neighbourhood's late-night kitchen: kebab carved off the spit, pizzas straight from a hot oven, fries that never sit around. Every plate is generous, every order is fast." data-fi="Aivan Sörnäisten metron vieressä Kuningas on kaupunginosan myöhäisillan keittiö: kebabia grillistä, pizzaa suoraan kuumasta uunista, ranskalaisia jotka eivät pääse jäähtymään. Jokainen annos on runsas, jokainen tilaus nopea.">Right next to Sörnäinen metro, Kuningas is the neighbourhood's late-night kitchen: kebab carved off the spit, pizzas straight from a hot oven, fries that never sit around. Every plate is generous, every order is fast.</p>
+    <div class="statrow">
+      <div class="stat"><b data-en="10–15€" data-fi="10–15€">10–15€</b><span data-en="Honest prices" data-fi="Rehelliset hinnat">Honest prices</span></div>
+      <div class="stat"><b data-en="24:00" data-fi="24:00">24:00</b><span data-en="Open every night" data-fi="Auki joka ilta">Open every night</span></div>
+      <div class="stat"><b data-en="100%" data-fi="100%">100%</b><span data-en="Halal options" data-fi="Halal-vaihtoehdot">Halal options</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="menu">
+  <div class="wrap">
+    <div class="kick" data-en="The Royal Menu" data-fi="Kuninkaallinen lista">The Royal Menu</div>
+    <h2 data-en="Choose your crown" data-fi="Valitse kruunusi">Choose your crown</h2>
+
+    <div class="mitem">
+      <div class="row"><h3 data-en="Kuningas Kebab" data-fi="Kuningas-kebab">Kuningas Kebab</h3><span class="price">[PREZZO]</span></div>
+      <p data-en="The house special — carved halal meat, fresh salad, house sauce, warm bread." data-fi="Talon erikoisuus — halal-lihaa, tuoretta salaattia, talon kastiketta, lämmintä leipää.">The house special — carved halal meat, fresh salad, house sauce, warm bread.</p>
+    </div>
+    <div class="mitem">
+      <div class="row"><h3 data-en="Pizza Royal" data-fi="Pizza Royal">Pizza Royal</h3><span class="price">[PREZZO]</span></div>
+      <p data-en="Stone-oven pizza, generous toppings, folded box to go." data-fi="Kiviuunipizzaa, runsaat täytteet, rasia mukaan.">Stone-oven pizza, generous toppings, folded box to go.</p>
+    </div>
+    <div class="mitem">
+      <div class="row"><h3 data-en="Rulla Roll" data-fi="Rulla">Rulla Roll</h3><span class="price">[PREZZO]</span></div>
+      <p data-en="The late-night classic: everything rolled into one warm, perfect wrap." data-fi="Myöhäisillan klassikko: kaikki käärittynä yhteen lämpimään, täydelliseen kebappiin.">The late-night classic: everything rolled into one warm, perfect wrap.</p>
+    </div>
+    <div class="mitem">
+      <div class="row"><h3 data-en="Golden Fries" data-fi="Kultaiset ranskalaiset">Golden Fries</h3><span class="price">[PREZZO]</span></div>
+      <p data-en="Crispy outside, soft inside — the side that steals the show." data-fi="Rapeita päältä, pehmeitä sisältä — lisuke joka varastaa shown.">Crispy outside, soft inside — the side that steals the show.</p>
+    </div>
+    <div class="mitem">
+      <div class="row"><h3 data-en="Vegan & Veggie" data-fi="Vegaani & kasvis">Vegan & Veggie</h3><span class="price">[PREZZO]</span></div>
+      <p data-en="Falafel, grilled veggies, vegan sauces — nobody leaves hungry." data-fi="Falafelia, grillivihanneksia, vegaanikastikkeita — kukaan ei lähde nälkäisenä.">Falafel, grilled veggies, vegan sauces — nobody leaves hungry.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallerysec">
+  <div class="wrap">
+    <div class="kick" data-en="Fresh from the kitchen" data-fi="Suoraan keittiöstä">Fresh from the kitchen</div>
+    <h2 data-en="Look at <span class='gold'>that.</span>" data-fi="Katso <span class='gold'>tätä.</span>">Look at <span class="gold">that.</span></h2>
+    <div class="gal">
+      <div class="ph big" style="background:linear-gradient(135deg,#e23b2e,#8f0a20)"><span>🥙</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#f5c518,#e08900)"><span>🍕</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#ff9a3d,#c8102e)"><span>🍟</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#7ec850,#3e8e2f)"><span>🥗</span></div>
+      <div class="ph" style="background:linear-gradient(135deg,#ffce54,#f08a24)"><span>🌯</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="kick" data-en="Word on the street" data-fi="Kadun ääni">Word on the street</div>
+    <h2 data-en="Hunger <span class='gold'>approved</span>" data-fi="Nälän <span class='gold'>hyväksymä</span>">Hunger <span class="gold">approved</span></h2>
+    <div class="score">
+      <div class="big">4.0★</div>
+      <div class="cnt" data-en="104 Google reviews" data-fi="104 Google-arvostelua">104 Google reviews</div>
+    </div>
+    <div class="rev"><div class="stars">★★★★★</div><b data-en="“Right by the metro, perfect after a long day.”" data-fi="“Aivan metron vieressä, täydellinen pitkän päivän jälkeen.”">“Right by the metro, perfect after a long day.”</b></div>
+    <div class="rev"><div class="stars">★★★★☆</div><b data-en="“Generous portions, open when everything else is closed.”" data-fi="“Runsaat annokset, auki kun kaikki muu on kiinni.”">“Generous portions, open when everything else is closed.”</b></div>
+  </div>
+</section>
+
+<section class="hours">
+  <div class="wrap">
+    <div class="kick" data-en="Find the crown" data-fi="Löydä kruunu">Find the crown</div>
+    <h2 data-en="Open <span class='gold'>late</span>" data-fi="Auki <span class='gold'>myöhään</span>">Open <span class="gold">late</span></h2>
+    <div class="hrow today"><span data-en="Monday – Sunday" data-fi="Maanantai – sunnuntai">Monday – Sunday</span><span data-en="till midnight [ORARI]" data-fi="keskiyöhön asti [ORARI]">till midnight [ORARI]</span></div>
+    <div class="mapbox">
+      <iframe title="Kuningas Pizza & Kebab map" src="https://maps.google.com/maps?q=Helsinginkatu%202%2C%2000500%20Helsinki&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    </div>
+    <div class="addr">
+      📍 Helsinginkatu 2, 00500 Helsinki — Sörnäinen
+      <small data-en="1 minute from Sörnäinen metro" data-fi="1 minuutti Sörnäisten metrosta">1 minute from Sörnäinen metro</small>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="order">
+  <div class="wrap">
+    <div class="kick" data-en="Order direct" data-fi="Tilaa suoraan">Order direct</div>
+    <h2 data-en="Your food. <span style='color:var(--gold)'>Zero fees.</span>" data-fi="Ruokasi. <span style='color:var(--gold)'>Nolla maksuja.</span>">Your food. <span style="color:var(--gold)">Zero fees.</span></h2>
+    <p style="max-width:40ch;margin:0 auto;font-weight:600;color:#ffe9ec" data-en="Order straight from us — no app commission, better prices for you. Call, message or walk in." data-fi="Tilaa suoraan meiltä — ei sovellusprovisiona, paremmat hinnat sinulle. Soita, viestitä tai poikkea.">Order straight from us — no app commission, better prices for you. Call, message or walk in.</p>
+    <div class="cbtns">
+      <a class="cbtn" href="tel:[TELEFONO]" data-en="📞 Call [TELEFONO]" data-fi="📞 Soita [TELEFONO]">📞 Call [TELEFONO]</a>
+      <a class="cbtn ghost" href="https://wa.me/[WHATSAPP]?text=Hi!%20I%27d%20like%20to%20order%20for%20pickup%20%F0%9F%A5%99" data-en="💬 WhatsApp order" data-fi="💬 WhatsApp-tilaus">💬 WhatsApp order</a>
+    </div>
+  </div>
+</section>
+
+<nav class="stickybar">
+  <a href="tel:[TELEFONO]"><span class="ico">📞</span><span data-en="Call" data-fi="Soita">Call</span></a>
+  <a class="wa" href="https://wa.me/[WHATSAPP]"><span class="ico">💬</span><span data-en="WhatsApp" data-fi="WhatsApp">WhatsApp</span></a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=Helsinginkatu+2,+00500+Helsinki" target="_blank" rel="noopener"><span class="ico">🧭</span><span data-en="Directions" data-fi="Reitti">Directions</span></a>
+</nav>
+
+<footer>
+  KUNINGAS PIZZA & KEBAB · HELSINGINKATU 2, HELSINKI<br>
+  <span data-en="Demo website — final menus, prices and contact details are added together with the owner." data-fi="Demosivusto — lopulliset listat, hinnat ja yhteystiedot lisätään yhdessä omistajan kanssa.">Demo website — final menus, prices and contact details are added together with the owner.</span>
+</footer>
+
+<script>
+function toggleLang(){
+  const html=document.documentElement;
+  const to=html.lang==='en'?'fi':'en';
+  html.lang=to;
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    const t=el.dataset[to]; if(t!==undefined) el.innerHTML=t;
+  });
+  document.getElementById('langBtn').textContent = to==='en' ? 'FI' : 'EN';
+  try{localStorage.setItem('kun-lang',to)}catch(e){}
+}
+try{const s=localStorage.getItem('kun-lang'); if(s&&s!=='en'){document.documentElement.lang='en'; toggleLang();}}catch(e){}
+</script>
+</body>
+</html>
